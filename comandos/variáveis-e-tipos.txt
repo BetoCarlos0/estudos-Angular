@@ -1,0 +1,8 @@
+variavel genérica any, aceita todo tipo de variáveis e funções de tempo
+any[] = []; == vazio []
+any[]; == udnefined
+
+--bindes, funções
+()   = html > ts
+[]   = ts  > html
+[()] = ts <> html
