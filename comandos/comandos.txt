@@ -1,0 +1,9 @@
+--nova aplicação configurada com testes e etc.
+ng new nome-do-arquivo
+
+--executa servidor interno sem abrir browser
+ng serve
+
+--executa servidor interno, abri browser
+ng serve -o
+
