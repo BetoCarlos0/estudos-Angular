@@ -7,3 +7,5 @@ ng serve
 --executa servidor interno, abri browser
 ng serve -o
 
+--compila aplicação de modo simples criando uma pasta dist para subir para servidor
+ng build

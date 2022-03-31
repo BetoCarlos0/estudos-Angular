@@ -1,19 +1,49 @@
-<h1>{{ title }}</h1>
+<h1 class="title animated bounce">{{ title }}</h1>
 
-<ul>
+<ul class="animated flipInX" *ngIf="mode == 'list'">
+  <p class="text-center" *ngIf="todos.length == 0">
+    <small>Voê ainda não nenhuma tarefa</small>
+  </p>
+
   <li *ngFor="let todo of todos" >
-    {{todo.id}} {{ todo.title }} - 
-    <button (click)="markAsDone(todo)" *ngIf="!todo.done">Concluir</button> |
-    <button (click)="markAsUndone(todo)" *ngIf="todo.done">Refaser</button> |
-    <button (click)="remove(todo)">Remover</button>
+    {{todo.id}} {{ todo.title }}
+    <button (click)="markAsDone(todo)" *ngIf="!todo.done">
+      <i class="far fa-check-circle"></i>
+    </button>
+
+    <button (click)="markAsUndone(todo)" *ngIf="todo.done">
+      <i class="fas fa-check-circle"></i>
+    </button>
+
+    <button (click)="remove(todo)">
+      <i class="far fa-trash-alt"></i>
+    </button>
+    
+    <hr *ngIf="todos.length != 1">
   </li>
 </ul>
 
-<form [formGroup]="form">
-  <fieldset>
-    <label for="">Tarefa: </label>
+<div id="modal" *ngIf="mode == 'add'" class="animated flipInX">
+  <h1 class="text-center">Nova Tarefa</h1>
+  <form [formGroup]="form">
     <input type="text" placeholder="titulo da tarefa" maxlength="20" formControlName="title">
-    <small *ngIf="form.invalid && !form.pristine">deve conter entre 3 e 20 caracteres</small>
-    <button>Salvar</button>
-  </fieldset>
-</form>
+
+    <small class="danger" *ngIf="form.invalid && !form.pristine">
+      Este campo deve conter entre 3 e 20 caracteres
+    </small>
+
+    <p class="test-center">
+      <button class="button" [disabled]="form.invalid" (click)="add()">
+        <i class="far fa-save"></i>Salvar
+      </button>
+    </p>
+  </form>
+</div>
+
+<button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
+  <i class="fas fa-plus-circle"></i>  NOVA TAREFA
+</button>
+
+<button class="add-button animated fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
+  <i class="fas fa-times"></i>  CANCELAR
+</button>
