@@ -9,3 +9,8 @@ ng serve -o
 
 --compila aplicação de modo simples criando uma pasta dist para subir para servidor
 ng build
+
+--add compomente
+ng generate component novo-componente
+ou add com pasta
+ng generate component pasta/novo-componente
