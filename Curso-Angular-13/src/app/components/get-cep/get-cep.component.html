@@ -1,0 +1,44 @@
+<div class="componente">
+  <table *ngIf="cep">
+      <tr>
+          <td>Cep</td>
+          <td>{{cep.cep}}</td>
+      </tr>
+      <tr>
+          <td>Logradouro</td>
+          <td>{{cep.logradouro}}</td>
+      </tr>
+      <tr *ngIf="cep.complemento">
+          <td>Complemento</td>
+          <td>{{cep.complemento}}</td>
+      </tr>
+      <tr>
+          <td>Bairro</td>
+          <td>{{cep.bairro}}</td>
+      </tr>
+      <tr>
+          <td>Localidade</td>
+          <td>{{cep.localidade}}</td>
+      </tr>
+      <tr>
+          <td>Uf</td>
+          <td>{{cep.uf}}</td>
+      </tr>
+      <tr *ngIf="cep.ibge">
+          <td>Ibge</td>
+          <td>{{cep.ibge}}</td>
+      </tr>
+      <tr *ngIf="cep.gia">
+          <td>Gia</td>
+          <td>{{cep.gia}}</td>
+      </tr>
+      <tr *ngIf="cep.ddd">
+          <td>DDD</td>
+          <td>{{cep.ddd}}</td>
+      </tr>
+      <tr *ngIf="cep.siafi">
+          <td>Siafi</td>
+          <td>{{cep.siafi}}</td>
+      </tr>
+  </table>
+</div>

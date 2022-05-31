@@ -1,7 +1,9 @@
-<p>if-render works!</p>
-<div>
-    <p *ngIf="rendName != ''; else nameNotFound">{{ rendName }}</p>
-    <ng-template #nameNotFound>
-        <p>Nome não encontrado</p>
-    </ng-template>
+<div class="componente">
+    <p>if-render works!</p>
+    <div>
+        <p *ngIf="rendName != ''; else nameNotFound">{{ rendName }}</p>
+        <ng-template #nameNotFound>
+            <p>Nome não encontrado</p>
+        </ng-template>
+    </div>
 </div>

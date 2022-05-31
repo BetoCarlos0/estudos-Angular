@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.componente{
+    position: relative;
+    border-bottom: 1px solid gray;
+    min-height: 100px;
+}

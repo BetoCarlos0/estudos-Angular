@@ -14,3 +14,6 @@ ng build
 ng generate component novo-componente
 ou add com pasta
 ng generate component pasta/novo-componente
+
+--add service para requisição de API
+ng generate service 'nome'

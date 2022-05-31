@@ -1,6 +1,7 @@
 {{ title }}
-<br />
-<app-parent-data [userData]="userData"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
+<nav>
+  <a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a> |
+  <a [routerLink]="['/list']" routerLinkActive="router-link-active">Lista</a> |
+  <a [routerLink]="['/change-number']" routerLinkActive="router-link-active">Número Random</a> |
+</nav>
+<router-outlet></router-outlet>
