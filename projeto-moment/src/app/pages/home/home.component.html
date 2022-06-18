@@ -1,1 +1,30 @@
-<p>home works!</p>
+<div class="home-container">
+  <h1>Veja o que estão compartilhando</h1>
+  <div class="search-container">
+    <form action="">
+      <fa-icon [icon]="faSearch"></fa-icon>
+      <input
+        type="text"
+        placeholder="Pesquisar momento"
+        (input)="search($event)"
+      />
+    </form>
+  </div>
+  <div *ngIf="moments.length > 0; else noMoments">
+    <div class="moments-container">
+      <div class="moment" *ngFor="let item of moments">
+        <img
+          src="{{ baseApiUrl }}uploads/{{ item.image }}"
+          alt="{{ item.title }}"
+        />
+        <h3>{{ item.title }}</h3>
+        <p class="date">Em: {{ item.created_at }}</p>
+        <p>Comentários: {{ item.comments!.length }}</p>
+        <p><a routerLink="moments/{{ item.id }}">Detalhes</a></p>
+      </div>
+    </div>
+  </div>
+  <ng-template #noMoments>
+    <h3>não há momentos cadastrados</h3>
+  </ng-template>
+</div>

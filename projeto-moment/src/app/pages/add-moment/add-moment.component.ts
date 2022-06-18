@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Moment } from 'src/app/Moment';
+import { Router } from '@angular/router';
 import { MomentsService } from 'src/app/services/moments.service';
+import { MessagesService } from 'src/app/services/messages.service';
 
 @Component({
   selector: 'app-add-moment',
@@ -10,7 +12,9 @@ import { MomentsService } from 'src/app/services/moments.service';
 export class AddMomentComponent implements OnInit {
   btnText = "Compatilhar!";
 
-  constructor(private momentService: MomentsService) { }
+  constructor(private momentService: MomentsService,
+              private messageService: MessagesService,
+              private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +29,10 @@ export class AddMomentComponent implements OnInit {
       formData.append("image", moment.image)
     
     await this.momentService.createMoment(formData).subscribe();
+
+    this.messageService.add('Momento adicionado!');
+
+    this.router.navigate(['/']);
   }
 
 }

@@ -1,1 +1,8 @@
-<p>messages works!</p>
+<div class="body">
+    <div class="message" *ngIf="messageService.message">
+        <p>
+            <fa-icon class="check" [icon]="faCheck"></fa-icon>
+            {{messageService.message}}
+        </p>
+    </div>
+</div>
