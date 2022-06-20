@@ -19,10 +19,14 @@
         transform: translateX(250px);
     }
 }
-.message p {
+.message p, .message path {
     font-size: 1.1em;
+    color: rgb(13, 189, 13);
 }
 .message .check {
     margin-right: 8px;
     font-size: 1.2em;
+}
+.message path{
+    fill: rgb(136, 34, 34);
 }

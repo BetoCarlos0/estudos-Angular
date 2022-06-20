@@ -6,10 +6,13 @@
     font-family: Cambria;
     color: #444;
 }
+body{
+  height: 100vh;
+}
 .container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 a{
     text-decoration: none;
@@ -46,6 +49,7 @@ input[type="submit"]{
     background-color: #efefef;
     border: 2px solid transparent;
     padding: .6em 1em;
+    margin-top: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: .4s;
@@ -61,4 +65,42 @@ input[type="submit"]:hover{
     margin-top: .4em;
     border-left: 3px solid #dc3545;
     padding-left: .2em;
+}
+
+/* BUTTONS */
+
+.edit-btn,
+.remove-btn {
+  border: 1px solid #efefef;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.4s;
+}
+button fa-icon,
+a fa-icon {
+  margin-right: 0.2em;
+}
+.edit-btn,
+.edit-btn path {
+  border-color: #007bff;
+  color: #007bff;
+}
+.edit-btn:hover,
+.edit-btn:hover path {
+  color: #fff;
+  background-color: #007bff;
+}
+.remove-btn,
+.remove-btn path {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.remove-btn:hover,
+.remove-btn:hover path {
+  color: #fff;
+  background-color: #dc3545;
 }
