@@ -1,0 +1,16 @@
+<div class="home">
+  <h1>{{ title | titlecase }}</h1>
+
+  <div class="card" style="width: 18rem">
+    <img [src]="foto" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ produto }}</h5>
+      <span *ngIf="promocao" class="badge text-bg-success">promoção</span>
+      <p class="card-text">Identificação: {{ idProduto }}</p>
+      <p>Validade: {{ data | date: 'dd/MM/yyyy'}}</p>
+      <a href="#" class="btn btn-primary"
+        >Preço: {{ valor | currency }}</a
+      >
+    </div>
+  </div>
+</div>
