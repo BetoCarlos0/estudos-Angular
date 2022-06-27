@@ -12,6 +12,8 @@ import { FooterComponent } from './template/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/product/list/list.component';
 import { CreateComponent } from './components/product/create/create.component';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localePt);
 
@@ -26,7 +28,9 @@ registerLocaleData(localePt);
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    SharedModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'pt-BR'},

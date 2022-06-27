@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit {
+  nome!: string;
+  validade!: string;
+  valor!: number;
 
   constructor() { }
 
