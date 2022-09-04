@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  ipAddress = '';
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+    this.getIpAddress();
   }
 
+  getIpAddress(){
+    this.http.get("http://api.ipify.org/?format=json").subscribe((res:any) => {
+      this.ipAddress = res.ip;
+    });
+  }
 }
