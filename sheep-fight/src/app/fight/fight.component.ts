@@ -10,6 +10,7 @@ export class FightComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    var teste;
   }
 
 }
