@@ -1,0 +1,10 @@
+.enable {
+    color: blue;
+}
+.disable {
+    color: red;
+}
+div{
+ border: 1px solid gray;
+ padding: 10px;
+}

@@ -1,0 +1,12 @@
+<div>
+    <ng-content select="h1"></ng-content>
+    
+    <p [ngClass]="estilo">atributo works!</p>
+    <button (click)="trocar()">trocar cor</button>
+    <p [ngStyle]="{ 'background': corFundo, 'color': corFonte }">ngStyle</p>
+
+    <input type="text" [(ngModel)]="item">
+    <p>{{ item }}</p>
+
+    <ng-content select="p"></ng-content>
+</div>

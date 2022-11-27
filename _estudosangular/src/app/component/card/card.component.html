@@ -1,5 +1,18 @@
-<p *ngIf="active; else block">card works!</p>
+<div>
+    <p *ngIf="active; else block">card works!</p>
+    
+    <ng-template #block>
+        <p>bloco ng-template</p>
+    </ng-template>
+    
+    <input type="text" [(ngModel)]="valor" />
+    <button (click)="adicionar(valor)">adicionar</button>
+    <ul>
+        <li *ngFor="let item of produtos; let i = index" >{{ item }} | <button (click)="remover(i)">remover</button></li>
+    </ul>
+    <ng-template [ngIf]="haveProdutos()">
+        <button>adicionar ao carrinho</button>
+    </ng-template>
+    
+</div>
 
-<ng-template #block>
-    <p>bloco ng-template</p>
-</ng-template>
