@@ -1,3 +1,8 @@
+.big-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .big-card span {
     color: gray;
 }
@@ -8,6 +13,7 @@
 
 .big-card h2 {
     font-size: 1.9rem;
+    margin: 8px 0;
 }
 
 .big-card p {

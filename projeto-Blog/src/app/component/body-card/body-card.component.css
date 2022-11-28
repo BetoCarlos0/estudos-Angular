@@ -1,0 +1,22 @@
+.body-card {
+    padding: 30px 7.1%;
+}
+
+.body-card .posts{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.body-card > p {
+    text-transform: uppercase;
+}
+
+.body-card img{
+    width: 100%;
+}
+
+.body-card .posts div {
+    width: 200px;
+}

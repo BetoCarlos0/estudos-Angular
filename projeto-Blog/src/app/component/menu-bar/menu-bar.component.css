@@ -1,8 +1,9 @@
 .menu-bar {
     color: #929292;
     fill: #929292;
-    margin: 50px 0;
     font-size: .8rem;
+    background-color: #111111;
+    padding: 50px 7.1% 10px 7.1%;
 }
 
 .menu-bar nav {
