@@ -1,0 +1,16 @@
+.small-card {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(59, 59, 59);
+}
+
+.small-card img {
+    width: 230px;
+}
+
+.small-card span {
+    font-size: .9rem;
+    color: gray;
+}

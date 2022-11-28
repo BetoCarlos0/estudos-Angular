@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.content .big-card {
+    flex: 1;
+}
+
+.content .small-card {
+    flex: 1;
+}
