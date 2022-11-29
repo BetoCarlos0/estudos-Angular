@@ -1,13 +1,14 @@
 .small-card {
     display: flex;
     gap: 20px;
+    align-items: center;
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid rgb(59, 59, 59);
 }
 
 .small-card img {
-    width: 230px;
+    max-width: 230px;
 }
 
 .small-card span {
@@ -17,4 +18,28 @@
 
 .small-card h3 {
     margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 557px)  {
+    .small-card {
+        width: 100%;
+        gap: 12px;
+        padding-top: 30px;
+        padding-bottom: 0;
+        border-bottom: none;
+        border-top: 2px solid rgb(59, 59, 59);
+        flex-direction: row-reverse;
+        align-items: unset;
+    }
+
+    .small-card img {
+        display: block;
+        max-width: 170px;
+    }
+
+    .small-card h3 {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
 }

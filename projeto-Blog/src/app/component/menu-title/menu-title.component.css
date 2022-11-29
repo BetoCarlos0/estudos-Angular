@@ -8,6 +8,15 @@ h1 {
     border-top: 2px solid rgb(46, 46, 46);
     border-bottom: 2px solid rgb(46, 46, 46);
     font-weight: 700;
-    line-height: 100%;
-    padding-bottom: 3vw;
+    line-height: 120%;
+    padding-bottom: 4vw;
+}
+
+@media screen and (max-width: 557px)  {
+    h1 {
+        font-size: 18.6vw;
+        font-weight: 700;
+        line-height: 120%;
+        padding-bottom: 4vw;
+    }
 }

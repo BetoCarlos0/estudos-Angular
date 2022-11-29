@@ -3,11 +3,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 50px;
-    margin: 0px 0;
+    gap: 6%;
     background-color: #111111;
     color: #fff;
-    padding: 0px 7.1%;
+    padding: 0 7.1% 50px 7.1%;
 }
 
 .content .big-card {
@@ -21,4 +20,15 @@
 .content .body-card {
     flex: 2;
     background-color: #fff;
+}
+
+@media screen and (max-width: 557px)  {
+    .content {
+        gap: 6%;
+        padding: 0 5% 20px 5%;
+    }
+
+     .content .small-card {
+        width: 100%;
+     }
 }

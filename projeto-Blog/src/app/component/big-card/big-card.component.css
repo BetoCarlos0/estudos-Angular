@@ -3,11 +3,12 @@
     flex-direction: column;
 }
 
-.big-card span {
-    color: gray;
+.big-card img {
+    max-width: 100%;
 }
 
 .big-card span {
+    color: gray;
     font-size: .9rem;
 }
 
@@ -19,4 +20,19 @@
 .big-card p {
     color: gray;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 557px)  {
+    .big-card span {
+        margin: 10px 0;
+    }
+
+    .big-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .big-card p {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
 }
