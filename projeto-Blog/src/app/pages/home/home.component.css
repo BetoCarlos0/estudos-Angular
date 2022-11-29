@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6%;
+    background-color: #111111;
+    color: #fff;
+    padding: 0 7.1% 50px 7.1%;
+}
+
+.content .big-card {
+    flex: 1;
+}
+
+.content .small-card {
+    flex: 1;
+}
+
+.body-card {
+    flex: 2;
+}
+
+@media screen and (max-width: 557px)  {
+    .content {
+        gap: 6%;
+        padding: 0 5% 20px 5%;
+    }
+
+     .content .small-card {
+        width: 100%;
+     }
+}
