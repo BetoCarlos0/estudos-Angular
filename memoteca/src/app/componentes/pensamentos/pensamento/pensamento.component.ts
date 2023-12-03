@@ -14,7 +14,7 @@ export class PensamentoComponent {
     modelo: 'modelo3'
   }
 
-  larguraPensamento(): string {
+  public larguraPensamento(): string {
     if(this.pensamento.conteudo.length >= 256) {
       return 'pensamento-g'
     }
