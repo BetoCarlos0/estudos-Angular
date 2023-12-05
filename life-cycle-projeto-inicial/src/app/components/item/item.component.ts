@@ -12,6 +12,7 @@ export class ItemComponent implements OnInit, OnChanges {
   @Input() item!: Item
 
   @Output() emitindoItemParaEditar = new EventEmitter()
+  @Output() emitindoIdParaDeletar = new EventEmitter()
 
   faPen = faPen;
   faTrash = faTrash
@@ -24,5 +25,9 @@ export class ItemComponent implements OnInit, OnChanges {
 
   editarItem(): void {
     this.emitindoItemParaEditar.emit(this.item)
+  }
+  
+  public deletarItem(): void {
+    this.emitindoIdParaDeletar.emit(this.item.id)
   }
 }
