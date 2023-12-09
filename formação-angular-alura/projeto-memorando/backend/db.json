@@ -1,0 +1,67 @@
+{
+  "tarefas": [
+    {
+      "id": 1,
+      "descricao": "Ir ao supermercado",
+      "categoria": "Casa",
+      "statusFinalizado": false,
+      "prioridade": "Baixa"
+    },
+    {
+      "id": 2,
+      "descricao": "Estudar sobre acessibilidade",
+      "categoria": "Trabalho",
+      "statusFinalizado": false,
+      "prioridade": "Normal"
+    },
+    {
+      "id": 4,
+      "descricao": "Preencher formulário de inscrição",
+      "categoria": "Estudos",
+      "statusFinalizado": false,
+      "prioridade": "Normal"
+    },
+    {
+      "id": 5,
+      "descricao": "Trocar lâmpada",
+      "categoria": "Casa",
+      "statusFinalizado": false,
+      "prioridade": "Alta"
+    },
+    {
+      "id": 6,
+      "descricao": "Ler",
+      "statusFinalizado": false,
+      "categoria": "Estudos",
+      "prioridade": "Alta"
+    },
+    {
+      "id": 7,
+      "descricao": "Regar as plantas",
+      "statusFinalizado": false,
+      "categoria": "Casa",
+      "prioridade": "Normal"
+    },
+    {
+      "id": 8,
+      "descricao": "Estudar",
+      "statusFinalizado": false,
+      "categoria": "Casa",
+      "prioridade": "Normal"
+    },
+    {
+      "id": 9,
+      "descricao": "fazer comidinhas",
+      "statusFinalizado": false,
+      "categoria": "Casa",
+      "prioridade": "Normal"
+    },
+    {
+      "id": 10,
+      "descricao": "Subir versão do sigia",
+      "statusFinalizado": false,
+      "categoria": "Trabalho",
+      "prioridade": "Alta"
+    }
+  ]
+}
