@@ -45,23 +45,9 @@
     {
       "id": 8,
       "descricao": "Estudar",
-      "statusFinalizado": false,
+      "statusFinalizado": true,
       "categoria": "Casa",
       "prioridade": "Normal"
-    },
-    {
-      "id": 9,
-      "descricao": "fazer comidinhas",
-      "statusFinalizado": false,
-      "categoria": "Casa",
-      "prioridade": "Normal"
-    },
-    {
-      "id": 10,
-      "descricao": "Subir versão do sigia",
-      "statusFinalizado": false,
-      "categoria": "Trabalho",
-      "prioridade": "Alta"
     }
   ]
 }
